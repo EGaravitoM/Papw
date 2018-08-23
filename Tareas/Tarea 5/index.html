@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Formularios</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    
+    <form action="test.html" method="GET" id="form1">
+        <input type="hidden" id="id">
+        <input type="text" name="val1" placeholder="Escribe algo aquí" autocomplete="on" disabled><br>
+        <input type="email" name="val2" value="ernegaravito@gmail.com" required readonly><br>
+        <input type="password" name="val3" required><br>
+
+        <input type="number" name="val4"><br>
+
+        H. <input type="radio" name="val5" value="hombre">
+        M. <input type="radio" name="val5" value="mujer">
+        O. <input type="radio" name="val5" value="otro(s)">
+
+        <br>
+
+        H- <input type="radio" name="val6" value="hombre">
+        M- <input type="radio" name="val6" value="mujer">
+        O- <input type="radio" name="val6" value="otro(s)">
+        
+        <br>
+
+        H- <input type="checkbox" name="fav" value="hombre"><br>
+        M- <input type="checkbox" name="fav" value="mujer"><br>
+        O- <input type="checkbox" name="fav" value="otro(s)"><br>
+
+        <br>
+
+        <select name="val7">
+            <option value="val1">Val1</option>
+            <option value="val2">Val2</option>
+            <option value="val3">Val3</option>
+        </select>
+
+        <br>
+
+        <input type="color" name="color">
+
+        <br>
+
+        <textarea placeholder="Hola" form="form1" name="Val8" ></textarea>
+
+        <br>
+
+        <input type="date" name="val9">
+
+        <br>
+
+        <input type="file" name="val10">
+
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+</html>
