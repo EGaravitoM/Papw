@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Formularios</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="../css/singup.css">
+
+</head>
+<body style="padding-left: 5%; padding-top: 50px">
+
+    <div class="container">
+        
+        <form action="test.html" method="GET" id="form1">
+
+                <input type="hidden" id="id">
+
+                <div class="form-group">
+                    <label for="nusuario">User Name</label>
+                    <input type="text" class="form-control" id="nusuario" placeholder="User name" required>
+                    <small id="usernameHelp" class="form-text text-muted">Plese select a unique user name.</small>
+                </div>
+
+                <div class="form-group">
+                  <label for="correoe">Email address</label>
+                  <input type="email" class="form-control" id="correoe" aria-describedby="emailHelp" placeholder="Enter email" required>
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else :v.</small>
+                </div>
+
+                <div class="form-group">
+                  <label for="contraseña">Password</label>
+                  <input type="password" class="form-control" id="contraseña" placeholder="Password" required>
+                  <small id="passwordHelp" class="form-text text-muted">We advise the use of numbers, upper and lowercase letters.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="birth">Birth Date</label><br>
+                    <input type="date" name="fecha" id="birth">
+                    <small id="dateHelp" class="form-text text-muted">Between 1920 - Today</small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="genero">Select Your Gender</label><br>
+                    H. <input type="radio" id="genero" name="val5" class="rb" value="hombre">
+                    M. <input type="radio" name="val5" class="rb" value="mujer">
+                    O. <input type="radio" name="val5" class="rb" value="otro(s)">
+                    <small id="genderHelp" class="form-text text-muted">Choose wisely.</small>
+                </div>
+
+                <div class="form-group form-check">
+                    <label class="form-check-label" for="exampleCheck1">Choose your Ocupation</label><br>
+                    <div class="cb">
+                        Student <input type="checkbox" name="fav" value="Student"><br>
+                        Profecionist <input type="checkbox" name="fav" value="Profecionist"><br>
+                        Enterpice <input type="checkbox" name="fav" value="Enterpice"><br>
+                    </div>
+                  
+                </div>
+
+                <div class="form-group">
+                    <label for="pp">Choose a Profile picture</label><br>
+                    <input type="file" name="profilepic" id="pp">
+                    <small id="ppHelp" class="form-text text-muted">Extra points for originality</small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="lenguage">Select your Lenguage</label>
+                    <select name="idioma" id="lenguage">
+                        <option value="english">English</option>
+                        <option value="spanish">Spanish</option>
+                        <option value="french">French</option>
+                    </select>
+                </div>
+
+                <button id="go" type="submit" class="btn btn-primary" style="float: right;">Submit</button>
+                <button id="nogo" type="reset" class="btn" style="float: left;">Cancel</button>
+              </form>
+
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $("#nogo").click(function(){
+            window.location.href = "../index.html"
+        });
+    </script>
+
+</body>
+</html>
