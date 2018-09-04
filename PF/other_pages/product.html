@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/product.css" />
+</head>
+<body>
+    <form action="">
+
+            <ul class="GNB">
+                    <li class="GNB_E"><a class="GNB_A" href="../index.html">Home</a></li>
+                    <li class="GNB_E"><a class="GNB_A" href="">Sell</a></li>
+                    <li class="GNB_E"><a class="GNB_A" href="">Cart</a></li>
+                    <li class="GNB_E"><input class="GNB_S form-control" type="text" id="search" placeholder="Search"></li>
+                    <li class="GNB_E SI"><a class="GNB_A" href="sing_in.html">Sign In</a></li>
+                    
+                </ul>
+
+        <div class="container form-group" id="amount">
+        
+            <label for="#units">Select the desired amount</label>
+            <input type="number" class="form-control"  min="1" id="units"><br>
+            <input id="ATC" type="button" class="btn btn-primary" value="Add to Cart">
+        </div>
+
+        <div id="ImgMuestra" class="container">
+            <img id="main" src="" alt="Aquí va foto main">
+            <img id="top" src="" alt="Aquí va foto top">
+            <img id="mid" src="" alt="Aquí va foto mid">
+            <img id="bot" src="" alt="Aquí va foto bot">
+        </div>
+
+        <p id="info" class="descripcion">
+            Pequeña descripción del producto, sus usos comunes y quién puede hacer uso de este o su público objetivo.
+        </p>
+        <ul id="Specs">
+                <label>Especificaciones:</label>
+                <li id="SEN"><b>Tipo de sensor:</b> Crop</li>
+                <li id="MEG"><b>Megapixeles:</b> 24</li>
+                <li id="OBJ"><b>Adaptador de Objetivos:</b> EF, A-EF</li>
+                <li id="VID"><b>Video:</b> 1080 - 60fps</li>
+                <li id="ISO"><b>ISO Máximo:</b> 12600</li>
+            </ul>
+
+    </form>
+</body>
+</html>
