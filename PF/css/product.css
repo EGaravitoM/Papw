@@ -135,4 +135,28 @@
     color: #FFD119;
     text-decoration: none; 
 }
+
+.comentgroup{
+    padding-top: 70px;
+}
+
+#comenttime{
+    padding: 0%;
+    width: 84%;
+    float: left;
+}
+#bcoment{ 
+    width: 14%;
+    float: right;
+}
+
+#bc2{
+    width: 100%;
+}
+
+#cbox{
+    margin-top: 12px;
+    padding: 0%;
+    width: 100%;    
+}
   

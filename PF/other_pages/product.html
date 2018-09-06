@@ -70,14 +70,20 @@
         <div id="casaEstrellas">
             <b>Rating:</b> <span id="Estrellas"></span>
         </div>
+
+        <div class="container form-group comentgroup">
+            <div id="comenttime"><input class="form-control" type="text"  placeholder="Escribe un comentario"></div>
+            <div id="bcoment"><input id="bc2" class="btn" type="button" value="Enviar" ></div>
+            <textarea name="coments" id="cbox" cols="150" rows="10"></textarea>
+        </div>
        
 
     </form>
 
     <script>
         $("#Estrellas").starrr({
-          /*  rating:3,
-            change:function(e,valor){
+          rating:3,
+            /*  change:function(e,valor){
                 alert(valor);
             }*/
         });
