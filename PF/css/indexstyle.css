@@ -36,11 +36,7 @@
     float: right;
 }
 
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
+
 
 .carousel-inner img{
     display: block;

@@ -1,0 +1,17 @@
+body{
+    background-image: url(../images/cartimg/10-camera-rig.jpg);
+    background-size: 100%;
+    background-repeat: inherit;
+}
+
+label, h2, h4, .lead{
+    color: aliceblue;
+}
+ #return{
+    width: 200px;
+    float: left;
+}
+#pay{
+    width: 200px;
+    float: right;
+}
