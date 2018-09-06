@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="../css/product.css">
+
+   <script src="../scripts/starrr.js"></script>
     
 
     
@@ -48,22 +50,33 @@
             <a href="cart.html"><input id="ATC" type="button" class="btn btn-primary" value="Add to Cart"></a>
         </div>
 
-        <p id="info" class="des cripcion">
-                Pequeña descripción del producto, sus usos comunes y quién puede hacer uso de este o su público objetivo.
-            </p>
-            <ul id="Specs">
-                    <label>Especificaciones:</label>
-                    <li id="SEN"><b>Tipo de sensor:</b> Crop</li>
-                    <li id="MEG"><b>Megapixeles:</b> 24</li>
-                    <li id="OBJ"><b>Adaptador de Objetivos:</b> EF, A-EF</li>
-                    <li id="VID"><b>Video:</b> 1080 - 60fps</li>
-                    <li id="ISO"><b>ISO Máximo:</b> 12600</li>
-            </ul>
-
+        <div class="descripcion">
+                <p id="info" class="des cripcion">
+                        Pequeña descripción del producto, sus usos comunes y quién puede hacer uso de este o su público objetivo.
+                    </p>
+                    
+        </div>
+        <div>
+                <ul id="Specs">
+                        <label>Especificaciones:</label>
+                        <li id="SEN"><b>Tipo de sensor:</b> Crop</li>
+                        <li id="MEG"><b>Megapixeles:</b> 24</li>
+                        <li id="OBJ"><b>Adaptador de Objetivos:</b> EF, A-EF</li>
+                        <li id="VID"><b>Video:</b> 1080 - 60fps</li>
+                        <li id="ISO"><b>ISO Máximo:</b> 12600</li>
+                </ul>
+        </div>
        
+        <div id="casaEstrellas">
+            <b>Rating:</b> <div id="Estrellas"></div>
+        </div>
+       
+
     </form>
 
-    
+    <script>
+        $("#Estrellas").starrr();
+    </script>
 
 </body>
 </html>
