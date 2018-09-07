@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>History</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../css/history.css">
+
+</head>
+<body>
+    
+        <div class="container">
+                <div class="row">
+                    
+                    
+                    <div class="col-md-12">
+                    <h4>User History</h4>
+                    <div class="table-responsive">
+            
+                            
+                          <table id="mytable" class="table table-bordred table-striped">
+                               
+                            <thead>
+
+                               <th>Delivered: <input type="checkbox" id="checkall" /></th>
+                               <th>Product Name</th>
+                                <th>Code</th>
+                                 <th>Sent To</th>
+                                 <th>Email</th>
+                                 <th>Contact</th>
+                                 
+                               </thead>
+                <tbody>
+                
+                <tr>
+                <td><input type="checkbox" class="checkthis" checked/></td>
+                <td>Canon SL2</td>
+                <td>15598746</td>
+                <td>Privada Refugio #106, Privadas de Cumbres, Monterrey, N.L., Mexico</td>
+                <td>ejemplochido@gmail.com</td>
+                <td>8119995180</td>
+                </tr>
+                
+             <tr>
+                <td><input type="checkbox" class="checkthis" /></td>
+                <td>Nikon 3400D</td>
+                <td>3669845</td>
+                <td>Privada Refugio #106, Privadas de Cumbres, Monterrey, N.L., Mexico</td>
+                <td>ejemplochido@gmail.com</td>
+                <td>8119995180</td>    
+                </tr>
+                
+                
+             <tr>
+                <td><input type="checkbox" class="checkthis" /></td>
+                <td>Sony a7 III</td>
+                <td>88965634</td>
+                <td>Privada Refugio #106, Privadas de Cumbres, Monterrey, N.L., Mexico</td>
+                <td>ejemplochido@gmail.com</td>
+                <td>8119995180</td>    
+                </tr>
+                
+                
+                
+             <tr>
+                <td><input type="checkbox" class="checkthis" checked/></td>
+                <td>50mm Canon</td>
+                <td>0032658</td>
+                <td>Privada Refugio #106, Privadas de Cumbres, Monterrey, N.L., Mexico</td>
+                <td>ejemplochido@gmail.com</td>
+                <td>8119995180</td>    
+                </tr>
+                
+                
+             <tr>
+                <td><input type="checkbox" class="checkthis" /></td>
+                <td>70mm-320mm</td>
+                <td>1554852</td>
+                <td>Privada Refugio #106, Privadas de Cumbres, Monterrey, N.L., Mexico</td>
+                <td>ejemplochido@gmail.com</td>
+                <td>8119995180</td>    
+                </tr>
+                
+                </tbody>
+                    
+            </table>
+            
+            <div class="clearfix "></div>
+            <div class="pages">
+                <ul class="pagination pull-right">
+                <li class="disabled"><a href="#"><span class="glyphicon glyphicon-chevron-left"></span></a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a></li>
+                </ul>
+            </div>
+
+            <div>
+                <input class="btn btn-primary" id="yoQuieroIrACasa" type="button" value="Home">
+            </div>
+                
+            </div>
+            </div>
+            </div>
+            </div>
+            
+           
+            <script>
+                $("#yoQuieroIrACasa").click(function() {
+                    window.location.href = "../index.html"
+                });
+            </script>
+</body>
+</html>
