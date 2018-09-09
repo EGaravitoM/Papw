@@ -28,6 +28,6 @@
 body{
     background-image: url(../images/singupimg/chuttersnap-579434-unsplash.jpeg);
     background-color: darkgray;
-    background-repeat: no-repeat;
+    background-repeat: inherit;
     background-size: 100%;
 }
