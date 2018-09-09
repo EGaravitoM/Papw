@@ -1,0 +1,39 @@
+.unaClase{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1; /* Color a todo el fondo */
+    /* Pegada al desplazar: position: sticky; */
+    /* Fija arriba */
+    position: fixed;
+    top: 0; /* O abajo: bottom: 0 */
+width: 100%;
+}
+
+li { 
+    float: left;
+} /* Cada elemento flota a la izquierda */
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+#derecha{
+    float: right;
+}
+
+.dropdown {
+position: relative;
+display: inline-block; /* Ajusta el contenido */
+}
+.dropdown-content {
+display: none; /* Oculta el contenido */
+position: absolute;
+min-width: 200%; /* Doble del ancho del padre */
+z-index: 1; /* Se muestra por encima */
+}
+.dropdown:hover .dropdown-content {
+display: block;
+}

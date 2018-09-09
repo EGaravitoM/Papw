@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ejemplo 8</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js\jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <h1>Título 1</h1>
+
+    <p>Un párrafo</p>
+
+    <ul>
+        <li>el1</li>
+        <li>el2</li>
+    </ul>
+    
+    <ol>
+        <li><a href="http://www.google.com.mx">Google Mx :o</a></li>
+        <li><a href="http://www.google.com.mx">Google Mx :o</a></li>
+        <li><a href="http://www.google.com.mx">Google Mx :o</a></li>
+    </ol>
+
+    <form>
+        <input type="text" value="Pepito">
+        <input type="email" placeholder="usuario@correo.com">
+        <input type="submit">
+    </form>
+
+    <button id="btn1">Botón 1</button>
+
+    <button id="btn2">Botón 1</button>
+
+    <p id="p1">Cosas</p>
+
+    <p class="p2">Cosas dos</p>
+
+    <button id="ajax">Ajax</button>
+
+    <div id="respuestaAjax"></div>
+
+    <script>
+        $(function(){
+            console.log("Funciona :)");
+
+            $("p").click(function(){
+                console.log(
+                    $(this).text()
+                );
+            });
+
+            $("li a").hover(function(){
+                $(this).css("background-color", "aliceblue");
+            });
+
+            $("li a").mouseleave(function(){
+                $(this).css("background-color", "coral");
+            });
+
+            $("input").focus(function(){
+                $(this).attr("type", "password");
+            });
+
+            $("input").blur(function(){
+                $(this).attr("type", "radio");
+            });
+
+            $("button").on({
+                dblclick : function(){
+                    console.log("Doble clic");
+                },
+                mouseenter : function(){
+                    console.log("Entré");
+                    $("p").css("font-weight", "bolder");
+                },
+                mouseleave : function(){
+                    console.log("Salí");
+                    $("p").css("font-weight", "normal");
+                }
+            });
+
+            $("#p1").click(function(){
+                console.log($("#p1").html());
+                $(".p2").append(
+                    $("#p1").html()
+                );
+            });
+
+            $("#btn1").click(function(){
+                $("#p1").prepend(
+                    $("input[type='text']").val()
+                );
+            });
+        });
+
+        // Se crea el elemento <i>Crea cursivas</i>
+        var e1 = $("<i></i>").text("Crea cursivas");
+
+        // Se crea un elemento <b></b>
+        var e2 = document.createElement("b");
+
+        // Se agrega al contenido del elemento <b>Crea negritas</b>
+        e2.innerHTML = "Crea negritas";
+
+        // Se añaden antes del elemento #p1 los elementos e1 y e2
+        $("#p1").before(e1, e2);
+        
+        /*
+        var a = $("li");
+
+        a.each(function(i){
+            console.log(a[i].html());
+        });
+        */
+
+        $("#ajax").click(function(){
+            $("#respuestaAjax").load("ajax.html");
+        });
+    </script>
+    
+</body>
+</html>

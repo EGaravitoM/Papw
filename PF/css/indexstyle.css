@@ -77,4 +77,9 @@
   .card-text {
     font-size: 85%;
   }
+
+  #uimg{
+      height: 50px;
+      width: 50px;
+  }
     

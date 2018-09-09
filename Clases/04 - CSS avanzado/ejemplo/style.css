@@ -1,0 +1,26 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    position: fixed; /* Para dejarla fija a la izquierda */
+    overflow: auto; /* Desborde con desplazamiento */
+    background-color: aquamarine;
+}
+
+li a {
+    display: block; /* Permite dar clic en toda el área */
+    text-decoration: none;
+    padding: 20px 16px 20px 10px; /* Arriba Derecha Abajo Izquierda */
+    text-align: center;
+    /*background-color: rebeccapurple;*/
+}
+ 
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+li a:link{
+    color: goldenrod;
+}

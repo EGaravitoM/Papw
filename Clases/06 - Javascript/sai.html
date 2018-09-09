@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Suma de ángulos internos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="corto.js"></script> <!-- Agregar script externo -->
+</head>
+<body onload="CortoCirtuito()">
+    <h1>Suma de ángulos internos</h1>
+    <p>Instrucciones: calcula la suma de los ángulos internos S de un polígono de n lados: S = 180 ⋅ (n − 2)</p>
+    <form>
+        <input type="number" id="ang" min="3" value="3">
+        <input type="button" onclick="SumAngInt()" value="SumAngInt">
+    </form>
+        <input type="text" id="angVar" value="5">
+        <input type="button" onclick="SumAngIntVar(angVar)" value="SumAngIntVar"> <!-- Se puede utilizar el nombre del id como atributo para enviar un elemento html -->
+    <p id="resultado">Resultado</p>
+    <script>
+
+        // document.GetElementById("elemento");
+
+        function HolaAdios(){
+            /*
+            console.log("hola");
+            alert("adiós");
+            */
+        }
+
+        function SumAngInt(){
+            var n = document.getElementById("ang").value;
+            var resultado = 180 * (n - 2);
+            var e = document.getElementById("resultado");
+            e.innerHTML = "SAI = " + resultado + "°";
+        }
+
+        function SumAngIntVar(n) {
+            console.log(n);
+            n = n.value;
+            var resultado = 180 * (n - 2);
+            var e = document.getElementById("resultado");
+            e.innerHTML = resultado;
+            return resultado;
+        }
+    </script>
+</body>
+</html>

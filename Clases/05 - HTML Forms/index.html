@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Formularios</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <form action="test.html" method="post" id="form1">
+        <input type="hidden" name="val0" value="oculto">
+        <input type="text" name="val1" placeholder="Escribe aquí algo" autocomplete="on" disabled><br>
+        <input type="email" name="val2" value="bena.87@hotmail.com" readonly id="val1"><br>
+        <input type="password" name="val3" autofocus><br>
+
+        <input type="number" name="val4"><br>
+
+        H <input type="radio" name="val5" value="hombre">
+        M <input type="radio" name="val5" value="mujer">
+        Os <input type="radio" name="val5" value="otro(s)"> <br>
+
+        H <input type="radio" name="fav" value="hombre"> 
+        M <input type="radio" name="fav" value="mujer"> 
+        Os <input type="radio" name="fav" value="otro(s)"> <br>
+
+        H <input type="checkbox" name="val6" value="gusto1"><br>
+        M <input type="checkbox" name="val6" value="gusto2"><br>
+        Os <input type="checkbox" name="val6" value="gusto3"><br>
+
+        <select name="val7">
+            <option value="val1">val1</option>
+            <option value="val2">val2</option>
+            <option value="val3">val3</option>
+        </select>
+
+        <br><input type="color" name="color">
+
+        <br><textarea placeholder="Hola" form="form1" name="val8"></textarea>
+
+        <br><input type="date" name="val9">
+
+        <br><input type="file" name="val10">
+
+        <input type="button" onclick="Alerta()" value="Botón">
+    </form>
+
+    <script>
+        function Alerta() {
+            val1 = document.getElementById("val1").value;
+            alert(val1);
+        }
+    </script>
+</body>
+</html>
+
+6670
+1672027 joshua

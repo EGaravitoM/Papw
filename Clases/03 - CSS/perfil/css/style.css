@@ -1,0 +1,19 @@
+body{
+    background-color: mediumpurple;
+    /* background-image: url("../img/foto.png"); */
+}
+
+h1{
+    background-color: papayawhip;
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+    padding: 50px;
+}
+
+.perfil, ol{
+    border-style: solid;
+    border-color: black;
+}

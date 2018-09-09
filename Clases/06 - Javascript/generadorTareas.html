@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Generador tareas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body onload="GenerarTareas()">
+    <ul id="tareas">
+
+    </ul>
+    
+    <script>
+        function GenerarTareas(){
+            var mats = [
+                "5775",
+                "8111",
+                "7563",
+                "7543",
+                "8959",
+                "4306",
+                "0219",
+                "4873",
+                "2554",
+                "7641",
+                "4069",
+                "6743",
+                "1480",
+                "7497",
+                "4179",
+                "0524",
+                "7408",
+                "1326",
+                "0813",
+                "2663",
+                "6725",
+                "6670",
+                "2027",
+                "2024",
+                "3255",
+                "1811",
+                "4334",
+                "7519",
+                "9376",
+                "7527",
+                "6312",
+                "1887",
+                "5074",
+                "1108",
+                "0564",
+                "2859",
+                "8926"
+            ];
+
+            var e = document.getElementById("tareas");
+
+            for (var i = 0; i < mats.length; i++){
+                var t = mats[i] + " - " + Math.ceil(Math.random() * 3);
+                e.innerHTML += "<li>" + t + "</li>\n";
+            }
+        }
+        </script>
+</body>
+</html>
