@@ -176,3 +176,12 @@
 #videoprod{
     size: 100%;
 }
+
+#ndp{
+    margin-left: 30px;
+}
+
+#percio_unidades{
+    float: right;
+    margin-right: 70px;
+}
