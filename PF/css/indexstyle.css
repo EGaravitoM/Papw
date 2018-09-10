@@ -36,6 +36,24 @@
     float: right;
 }
 
+.GNA {   
+    list-style-type: none;
+    background-color: #f1f1f1;
+    margin-top: 50px; 
+    padding: 0;
+    padding-top: 10px;   
+    width: 100px;   
+    height: 100%;   
+    position: fixed; /* Para dejarla fija a la izquierda */   
+    overflow: auto; /* Desborde con desplazamiento */ 
+} 
+ 
+.GNA .GNB_E {   
+    display: block; /* Permite dar clic en toda el área */   
+    text-decoration: none;
+    text-align: center; 
+} 
+
 
 
 .carousel-inner img{
