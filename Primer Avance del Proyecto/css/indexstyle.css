@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.GNB {
+    list-style-type: none;
+    margin-bottom: 10px;
+    padding-bottom: 0px;
+    background-color: #f1f1f1; /* Color a todo el fondo */
+    /* Pegada al desplazar: position: sticky; */
+    /* Fija arriba */
+    position: fixed;
+    top: 0; /* O abajo: bottom: 0 */
+    width: 100%;
+}
+
+.GNB_E { 
+    float: left;
+    
+} /* Cada elemento flota a la izquierda */
+
+.GNB_E .GNB_A {
+    color: red;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+}
+.GNB_E .GNB_S{
+    width: 250%;
+    height: 75%;
+    margin-top: 10px;
+}
+
+.SI{
+    float: right;
+}
+
+.GNA {   
+    list-style-type: none;
+    background-color: #f1f1f1;
+    margin-top: 50px; 
+    padding: 0;
+    padding-top: 10px;   
+    width: 100px;   
+    height: 100%;   
+    position: fixed; /* Para dejarla fija a la izquierda */   
+    overflow: auto; /* Desborde con desplazamiento */ 
+} 
+ 
+.GNA .GNB_E {   
+    display: block; /* Permite dar clic en toda el área */   
+    text-decoration: none;
+    text-align: center; 
+} 
+
+
+
+.carousel-inner img{
+    display: block;
+    width: 40%;
+    height: 500px;
+    size: 100%;
+}
+
+@media (max-width: 600px) {
+    .carrousel-caption{
+        display: none;
+    }
+}
+
+#MC{
+    margin-top: 40px;
+}
+
+.album {
+    min-height: 50rem; /* Can be removed; just added for demo purposes */
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #f7f7f7;
+  }
+  
+  .card {
+    float: left;
+    width: 25%;
+    padding: .75rem;
+    margin-bottom: 2rem;
+    border: 0;
+  }
+  
+  .card > img {
+    margin-bottom: .75rem;
+  }
+  
+  .card-text {
+    font-size: 85%;
+  }
+
+  #uimg{
+      height: 50px;
+      width: 50px;
+  }
+
+   
+    

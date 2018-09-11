@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.login{
+    margin: auto;
+    width: 14%;
+    padding-top: 150px;
+}
+
+.SI_E{
+    margin-bottom: 4px;
+}
+
+#goford{
+    float: right;
+}
+
+body{
+    background-image: url(../images/loginimg/eos-77d-hero.jpg);
+    background-color: darkgray;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.SU{
+    width: 100%;
+}
+
+#relog{
+    margin-bottom: 20px;
+    margin-left: 5px;
+}

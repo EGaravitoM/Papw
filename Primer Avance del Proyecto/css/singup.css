@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.rb{
+    margin-right: 1em;
+}
+
+.cb {
+    margin-left: 20px;
+}
+
+.container {
+    margin: 0% auto;
+    width: 50%;
+}
+
+#go{
+    margin-right: 1em;
+    margin-bottom: 3em;
+}
+
+#nogo{
+    margin-left: 1em;
+    margin-bottom: 3em;
+}
+body{
+    background-image: url(../images/singupimg/chuttersnap-579434-unsplash.jpeg);
+    background-color: darkgray;
+    background-repeat: inherit;
+    background-size: 100%;
+}

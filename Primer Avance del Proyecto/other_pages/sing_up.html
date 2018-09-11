@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Formularios</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="../css/singup.css">
+
+</head>
+<body style="padding-left: 5%; padding-top: 50px">
+
+    <div class="container">
+        
+        <form method="GET" id="form1">
+
+                <input type="hidden" id="id">
+
+                <div class="form-group">
+                    <label for="personname">Name</label>
+                    <input type="text" class="form-control" id="personname" placeholder="Name" required>
+                    <small id="personnameHelp" class="form-text text-muted">State your name</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" class="form-control" id="lastname" placeholder="Last name" required>
+                    <small id="lastnameHelp" class="form-text text-muted">State your last name.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="correoe">Email address</label>
+                    <input type="email" class="form-control" id="correoe" aria-describedby="emailHelp" placeholder="Enter email" required>
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else :v.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="nusuario">User Name</label>
+                    <input type="text" class="form-control" id="nusuario" placeholder="User name" required>
+                    <small id="usernameHelp" class="form-text text-muted">Plese select a unique user name.</small>
+                </div>
+
+                <div class="form-group">
+                  <label for="contraseña">Password</label>
+                  <input type="password" class="form-control" id="contraseña" placeholder="Password" required>
+                  <small id="passwordHelp" class="form-text text-muted">We advise the use of numbers, upper and lowercase letters.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="direccion">Address</label>
+                    <input type="text" class="form-control" id="direccion" placeholder="Address">
+                    <small id="direccionHelp" class="form-text text-muted">State your Address (opcional).</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="pnumber">Phone Number</label>
+                    <input type="text" class="form-control" id="pnumber" placeholder="Phone Number">
+                    <small id="pnumberHelp" class="form-text text-muted">State your Phone Number (opcional).</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="birth">Birth Date</label><br>
+                    <input type="date" name="fecha" id="birth">
+                    <small id="dateHelp" class="form-text text-muted">Between 1920 - Today</small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="genero">Select Your Gender</label><br>
+                    H. <input type="radio" id="genero" name="val5" class="rb" value="hombre">
+                    M. <input type="radio" name="val5" class="rb" value="mujer">
+                    O. <input type="radio" name="val5" class="rb" value="otro(s)">
+                    <small id="genderHelp" class="form-text text-muted">Choose wisely.</small>
+                </div>
+
+                <div class="form-group form-check">
+                    <label class="form-check-label" for="exampleCheck1">Choose your Ocupation</label><br>
+                    <div class="cb">
+                        Student <input type="checkbox" name="fav" value="Student"><br>
+                        Profecionist <input type="checkbox" name="fav" value="Profecionist"><br>
+                        Enterpice <input type="checkbox" name="fav" value="Enterpice"><br>
+                    </div>
+                  
+                </div>
+
+                <div class="form-group">
+                    <label for="pp">Choose a Profile picture</label><br>
+                    <input type="file" name="profilepic" id="pp">
+                    <small id="ppHelp" class="form-text text-muted">Extra points for originality</small>
+                </div>
+
+                <div class="form-group">
+                        <label for="pp">Choose a Portrait picture</label><br>
+                        <input type="file" name="portraitpic" id="pp">
+                        <small id="porpHelp" class="form-text text-muted">Extra points for originality</small>
+                    </div>
+                
+                <div class="form-group">
+                    <label for="lenguage">Select your Lenguage</label>
+                    <select name="idioma" id="lenguage">
+                        <option value="english">English</option>
+                        <option value="spanish">Spanish</option>
+                        <option value="french">French</option>
+                    </select>
+                </div>
+
+                <button id="go" type="submit" class="btn btn-primary" style="float: right;">Submit</button>
+                <button id="nogo" type="reset" class="btn" style="float: left;">Cancel</button>
+              </form>
+
+</div>
+
+
+    <script>
+        $("#nogo").click(function(){
+            window.location.href = "../index.html";
+        });
+        
+        $("#go").click(function(){
+            var pass = $("#contraseña").value();
+            var  caps = false, minus = false, num = false;
+            if ($("#nusuario").length <= 5) {
+                alert("El nombre de ususario debe de ser de 6 caracteres o más :v");
+            }
+
+            if($("#contraseña").length <= 7) {
+                alert("La contraseña debe ser de 8 caracteres o más :v");
+            }
+
+            for (let i = 0; i < $("#contraseña").length; i++) {
+
+                if(isNaN(pass.charAt(i))){
+
+                    if(pass.charAt(i) == toUpperCase(pass.charAt(i))){
+                        caps = true;
+                    }  
+
+                    if(pass.charAt(i) == toLowerCase(pass.charAt(i))){
+                        minus = true;
+                    } 
+
+                }
+                else{
+                    num = true;
+                }  
+            }
+
+            if(caps && minus && num){
+                alert("La contraseña debe una Mayuscula, Minúscula y Número :v");
+            }
+
+        });
+        
+        
+
+    </script>
+
+</body>
+</html>
